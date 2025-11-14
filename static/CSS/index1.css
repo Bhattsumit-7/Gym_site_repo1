@@ -1,0 +1,158 @@
+/* -----------------------------
+   BASE STYLES
+------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #676262, #c1bebd);
+}
+
+/* -----------------------------
+   MARQUEE CONTAINER
+------------------------------*/
+/* -----------------------------
+   MARQUEE CONTAINER
+------------------------------*/
+.marquee2 {
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;                  /* Increased padding so inner h2 fits */
+    border-radius: 15px;
+    background-color: rgb(19, 175, 102);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    width: 100%;
+    max-width: 140rem;
+
+    display: flex;                  /* keeps h2 centered and contained */
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.marquee2 h2 {
+    padding: 10px 20px;
+    border: 3px solid black;
+
+    width: auto;                    /* No fixed width */
+    max-width: 100%;                /* Don’t overflow */
+    color: azure;
+    background-color: red;
+    border-radius: 20px;
+
+    overflow-wrap: break-word;
+    text-align: center;
+    box-sizing: border-box;         /* clean box sizing */
+}
+
+
+
+/* -----------------------------
+   CARD STYLES
+------------------------------*/
+.card1 {
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 7px rgba(76, 73, 73, 0.5);
+    width: 100% !important;             /*  full responsive width */
+    max-width: 22rem !important;        /*  preserve original size */
+    margin-left: auto !important;       /*  center card */
+    margin-right: auto !important;
+}
+
+.card1:hover {
+    background-color: #f15e5e;
+    color: white;
+    box-shadow: 10px 10px 7px rgba(76, 73, 73, 0.5);
+    transform: scale(0.95);
+    transition: 0.3s ease;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+}
+
+.modify {
+    padding: 12px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* -----------------------------
+   RESPONSIVE MEDIA QUERIES
+------------------------------*/
+
+/* MOBILE (≤ 600px) */
+@media screen and (max-width: 600px) {
+
+    .marquee2 {
+        padding: 6px;
+    }
+
+    .marquee2 h2 {
+        font-size: 18px;
+        border-width: 2px;
+    }
+
+    .modify {
+        font-size: 18px;
+    }
+
+    .card1 {
+        width: 90% !important;       /*  perfect fit on mobile */
+        margin: 20px auto !important;
+        max-width: 20rem !important;
+    }
+}
+
+/* TABLETS (601px – 992px) */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+
+    .marquee2 h2 {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .modify {
+        font-size: 20px;
+    }
+
+    .card1 {
+        width: 80% !important;
+        margin: 25px auto !important;
+    }
+}
+
+/* LAPTOPS (993px – 1400px) */
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+
+    .marquee2 {
+        max-width: 110rem;
+    }
+
+    .marquee2 h2 {
+        max-width: 60rem;
+        font-size: 24px;
+    }
+
+    .card1 {
+        width: 70% !important;
+        margin: 30px auto !important;
+    }
+}
+
+/* LARGE SCREENS (1400px+) */
+@media screen and (min-width: 1401px) {
+    .marquee2 {
+        max-width: 140rem;
+    }
+}

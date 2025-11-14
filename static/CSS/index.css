@@ -1,0 +1,201 @@
+body{
+    /* background-color: grey; */
+    background: radial-gradient(circle, #676262, #454544);
+    background: linear-gradient(45deg, #676262, #c1bebd);
+}
+.modify{
+    padding: 12px;
+    padding-left: 12px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+.class1{
+    border: 4px solid black;
+    border-radius: 10px;
+}
+.marquee2{
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    background-color: rgb(243, 146, 162);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 600px;
+    /* font-size: 500px; */
+}
+/* ----------------------------------- */
+.container1{
+    margin-top: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: 3px solid black; */
+}
+.underline1{
+    text-decoration: underline;
+}
+.container1son{
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-size: 20px;
+    color: rgb(32, 35, 36);
+    background-color: #95b3f0;
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    
+}
+.container1son:hover {
+    box-shadow: 10px 10px 7px rgba(76, 73, 73, 0.5);
+    background-color: #f15e5e;
+    color: white;
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+mark{
+    background-color: #2ece2e;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    border: 2px solid black ;
+    border-radius: 7px;
+    color: rgb(22, 20, 20);
+    padding: 6px;
+    font-size: 17px;
+}
+/* --------------------------------------- */
+.container2son{
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-size: 20px;
+    background-color: #95b3f0;
+    color: rgb(32, 35, 36);
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    
+} 
+.container2son:hover {
+    box-shadow: 10px 10px 7px rgba(76, 73, 73, 0.5);
+    transition: transform 0.3s ease;
+    background-color: #f15e5e;
+    color: white;
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+/* =============================================== */
+/* ---------- Global Styles ---------- */
+body {
+    background: linear-gradient(45deg, #676262, #c1bebd);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Top Navigation Buttons (Unchanged) ---------- */
+.modify {
+    padding: 12px;
+    padding-left: 12px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.class1 {
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+/* ---------- Marquee Section (Unchanged) ---------- */
+.marquee2 {
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: rgb(243, 146, 162);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 600px;
+}
+
+/* ---------- Workout Containers ---------- */
+.container1 {
+    margin-top: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ---------- Headings and Highlights ---------- */
+.underline1 {
+    text-decoration: underline;
+}
+
+mark {
+    background-color: #2ece2e;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 7px;
+    color: rgb(22, 20, 20);
+    padding: 6px;
+    font-size: 17px;
+}
+
+/* ---------- Box Containers ---------- */
+.container1son,
+.container2son {
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-size: 20px;
+    color: rgb(32, 35, 36);
+    background-color: #95b3f0;
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.container1son:hover,
+.container2son:hover {
+    box-shadow: 10px 10px 7px rgba(76, 73, 73, 0.5);
+    background-color: #f15e5e;
+    color: white;
+    transform: scale(0.9);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+    .container1son,
+    .container2son {
+        margin-left: 50px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container1son,
+    .container2son {
+        margin-left: 0;
+        width: 95%;
+    }
+
+    .marquee2 {
+        margin-left: 0;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container1son,
+    .container2son {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px;
+    }
+
+    .marquee2 {
+        margin-left: 0;
+        width: 100%;
+        font-size: 16px;
+    }
+}
